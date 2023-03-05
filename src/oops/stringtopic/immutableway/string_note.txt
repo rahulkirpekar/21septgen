@@ -1,0 +1,71 @@
+String:- "Multiple Characters"
+---------
+String Data ----Operation------[String/StringBuilder/StringBuffer]
+
+		"Type of Operation In String Data"
+		-----------------------------------
+				|
+1) Immutable Way			2) Mutable Way
+---> String				----> StringBuilder
+					----> StringBuffer	 
+		
+1) Immutable Way[String]:-
+--------------------------
+
+1) By String Literal way[Object---HEAP------"String Constant Pool"]:-
+----------------------------------------------------------------------
+
+String name1 = "devang";
+String name2 = "devang";
+String name3 = name1;
+String name4 = name1 + " Patel";
+String name5 = "Patel";
+
+-----------------------
+str + int---concate
+int+int + str---additing+contacate
+str+int+int ---contacate
+-----------------------
+
+2) By 'new' keyword way[String Objects----Heap]:-
+------------------------------------------------
+
+String name6 = new String("Rahul");
+
+name6 = name6.concate("Kirpekar"); // name6 = name6 + "Kirpekar";
+
+SOP(name6);// Rahul
+SOP(name7);// RahulKirpekar
+
+name6 = name7;
+
+
+
+Object Equality:-
+-----------------
+
+1) == [references]
+
+2) .equals method[values]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
